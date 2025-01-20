@@ -26,3 +26,31 @@
 body {
     background-color: white;
 }
+
+/* Add CSS animations for fade-in and fade-out effects */
+#cookie-popup {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#cookie-popup.fade-out {
+    animation: fadeOut 1s ease-in-out;
+}
+
+/* Use keyframes to define the animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
