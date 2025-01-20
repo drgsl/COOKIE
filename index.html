@@ -3,19 +3,26 @@
 <head>
     <title>Cookie Popup</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <div id="cookie-popup">
-        <p>We use cookies to store your favourite background color.</p>
-        <label for="background-color">Choose your background color:</label>
-        <select id="background-color">
-            <option value="white">White</option>
-            <option value="lightgray">Light Gray</option>
-            <option value="lightblue">Light Blue</option>
-            <option value="lightgreen">Light Green</option>
-            <option value="lightyellow">Light Yellow</option>
-        </select>
-        <button id="accept-cookie">Accept</button>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div id="cookie-popup" class="card" role="dialog" aria-labelledby="cookie-popup-title" aria-describedby="cookie-popup-description">
+            <div class="card-body">
+                <h5 id="cookie-popup-title" class="card-title">Cookie Consent</h5>
+                <p id="cookie-popup-description" class="card-text">We use cookies to store your favourite background color.</p>
+                <label for="background-color">Choose your background color:</label>
+                <select id="background-color" class="form-control">
+                    <option value="bg-white">White</option>
+                    <option value="bg-light">Light</option>
+                    <option value="bg-primary">Blue</option>
+                    <option value="bg-success">Green</option>
+                    <option value="bg-warning">Yellow</option>
+                </select>
+                <button id="accept-cookie" class="btn btn-primary mt-3">Accept</button>
+                <button id="close-cookie-popup" class="btn btn-secondary mt-3">Close</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
